@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Blog</title>
+</head>
+
+<body>
+    <section class="header bg-white">
+        <div class="w-[75%] sm-md:w-[85%] mx-auto py-7">
+            <div class="flex justify-between items-center">
+                <a href="index.html">
+                    <img src="./images/tooplate_logo.png" alt="">
+                </a>
+                <div class="flex flex-col text-slate-600 sm-md:hidden">
+                    <div>
+                        <span class="font-bold">Email : </span>
+                        <span>farid@gmail.com</span>
+                    </div>
+                    <div>
+                        <span class="font-bold">Phone : </span>
+                        <span>014345354</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="header bg-[#1b1b1b]">
+        <div class="w-[75%] sm-md:w-[85%] mx-auto">
+            <div class="w-full flex justify-between items-center">
+                <div class="py-4 text-white hidden md-lg:block">
+                    <button id="btn" class="py-1 rounded-sm bg-green-600 px-2"><i class="fa-solid fa-list"></i></button>
+                </div>
+                <div class="text-[#5fa008] font-normal">
+                    <ul class="flex justify-start items-center gap-14 md-lg:hidden">
+                        <li>
+                            <a href="index.html"
+                                class="flex hover:text-white gap-1 flex-col justify-center items-center py-2 relative after:absolute after:h-[70%] after:w-[1px]  after:bg-[#5fa008] after:-right-[32px]">
+                                <span>Home</span>
+                                <i class="fa-solid fa-sort-up group-hover:rotate-180"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Gallery.html"
+                                class="flex hover:text-white gap-1 flex-col justify-center items-center py-2 relative after:absolute after:h-[70%] after:w-[1px]  after:bg-[#5fa008] after:-right-[32px]">
+                                <span>Gallery</span>
+                                <i class="fa-solid fa-sort-up group-hover:rotate-180"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="News.html"
+                                class="flex hover:text-white gap-1 flex-col justify-center items-center py-2 relative after:absolute after:h-[70%] after:w-[1px]  after:bg-[#5fa008] after:-right-[32px]">
+                                <span>News</span>
+                                <i class="fa-solid fa-sort-up group-hover:rotate-180"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Blog.html"
+                                class="flex text-white gap-1 flex-col justify-center items-center py-2 relative after:absolute after:h-[70%] after:w-[1px]  after:bg-[#5fa008] after:-right-[32px]">
+                                <span>Blog</span>
+                                <i class="fa-solid fa-sort-up group-hover:rotate-180"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Contact.html"
+                                class="flex hover:text-white gap-1 flex-col justify-center items-center py-2">
+                                <span>Contact</span>
+                                <i class="fa-solid fa-sort-up group-hover:rotate-180"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="flex relative rounded-sm">
+                        <input type="text" placeholder="search" class="py-1 px-2 border-0 outline-0 text-slate-600">
+                        <span class="absolute right-0 text-white py-[9px] bg-[#5fa008] flex text-sm px-[10px]"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-body" class="w-full h-[0px] overflow-hidden">
+                <div class="text-[#5fa008] font-normal hidden md-lg:block">
+                    <ul class="flex flex-col justify-start items-center gap-1 relative">
+                        <li>
+                            <a href="index.html"
+                                class="flex hover:text-white gap-1 justify-center items-center relative">
+                                <span>Home</span>
+                                <i class="fa-solid fa-sort-up pt-3"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Gallery.html"
+                                class="flex group hover:text-white gap-1 justify-center items-center relative">
+                                <span>Gallery</span>
+                                <i class="fa-solid fa-sort-up pt-3 group-hover:rotate-180"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="News.html"
+                                class="flex group hover:text-white gap-1 justify-center items-center relative">
+                                <span>News</span>
+                                <i class="fa-solid fa-sort-up pt-3 group-hover:rotate-180"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Blog.html"
+                                class="flex group text-white gap-1 justify-center items-center relative">
+                                <span>Post</span>
+                                <i class="fa-solid fa-sort-up pt-3 group-hover:rotate-180"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="Contact.html"
+                                class="flex group hover:text-white gap-1 justify-center items-center relative">
+                                <span>Contact</span>
+                                <i class="fa-solid fa-sort-up pt-3 group-hover:rotate-180"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-4 bg-[#5fa008] border-b-[6px] border-gray-400">
+        <div class="w-[75%] sm-md:w-[85%] mx-auto">
+            <h2 class="text-2xl text-white font-semibold mb-6">Post</h2>
+            <p class="text-white mb-2 block">Fusce urna massa, egestas at commodo non, vehicula sodales lectus. Integer
+                congue congue nunc, et ullamcorper lacus fringilla eu. Sed pellentesque ultrices luctus. Ut non lorem
+                nisl, tristique tempor quam.</p>
+        </div>
+    </section>
+    <section class="my-8">
+        <div class="w-[75%] sm-md:w-[85%] mx-auto">
+            <div class="w-full flex flex-wrap">
+                <div class="w-7/12 md:w-full">
+                    <div class="flex flex-col gap-3">
+                        <div class="flex flex-col gap-3">
+                            <span class="text-[#666] text-sm">Posted in <a class="text-orange-500" href="">Website</a>,
+                                <a class="text-orange-500" href="">Templates</a> | Date: June 26, 2048</span>
+                            <h2 class="text-xl text-slate-700 font-semibold pb-2">Sed mollis elementum lectus rhoncus
+                            </h2>
+                            <a class="flex p-2 bg-slate-200" href="">
+                                <img class="w-full" src="./images//blog_image_01.jpg" alt="">
+                            </a>
+                            <p class="text-[#666] text-sm">Nunc varius venenatis sem sed adipiscing. Mauris suscipit
+                                mauris in purus mattis
+                                placerat. Ut rhoncus imperdiet nibh sit amet sagittis. Aliquam erat volutpat. In
+                                pellentesque sagittis dictum. Aliquam erat volutpat. Cras posuere dictum facilisis.
+                                Validate XHTML and CSS.</p>
+                            <div class="flex justify-end items-center mt-5">
+                                <a class="bg-blue-100 hover:bg-blue-200 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
+                                    href="">More</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <span class="text-[#666] text-sm">Posted in <a class="text-orange-500" href="">Website</a>,
+                                <a class="text-orange-500" href="">Templates</a> | Date: June 26, 2048</span>
+                            <h2 class="text-xl text-slate-700 font-semibold pb-2">Sed mollis elementum lectus rhoncus
+                            </h2>
+                            <a class="flex p-2 bg-slate-200" href="">
+                                <img class="w-full" src="./images//blog_image_02.jpg" alt="">
+                            </a>
+                            <p class="text-[#666] text-sm">Nunc varius venenatis sem sed adipiscing. Mauris suscipit
+                                mauris in purus mattis
+                                placerat. Ut rhoncus imperdiet nibh sit amet sagittis. Aliquam erat volutpat. In
+                                pellentesque sagittis dictum. Aliquam erat volutpat. Cras posuere dictum facilisis.
+                                Validate XHTML and CSS.</p>
+                            <div class="flex justify-end items-center mt-5">
+                                <a class="bg-blue-100 hover:bg-blue-200 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
+                                    href="">More</a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-3">
+                            <span class="text-[#666] text-sm">Posted in <a class="text-orange-500" href="">Website</a>,
+                                <a class="text-orange-500" href="">Templates</a> | Date: June 26, 2048</span>
+                            <h2 class="text-xl text-slate-700 font-semibold pb-2">Sed mollis elementum lectus rhoncus
+                            </h2>
+                            <a class="flex p-2 bg-slate-200" href="">
+                                <img class="w-full" src="./images//blog_image_03.jpg" alt="">
+                            </a>
+                            <p class="text-[#666] text-sm">Nunc varius venenatis sem sed adipiscing. Mauris suscipit
+                                mauris in purus mattis
+                                placerat. Ut rhoncus imperdiet nibh sit amet sagittis. Aliquam erat volutpat. In
+                                pellentesque sagittis dictum. Aliquam erat volutpat. Cras posuere dictum facilisis.
+                                Validate XHTML and CSS.</p>
+                            <div class="flex justify-end items-center mt-5">
+                                <a class="bg-blue-100 hover:bg-blue-200 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
+                                    href="">More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-5/12  md:w-full">
+                    <div class="w-full pl-20 md:pl-0">
+                        <h2 class="text-3xl text-slate-700 font-semibold my-5">Latest Project
+                        </h2>
+                        <div class="flex flex-col gap-4">
+                            <div>
+                                <a href="" class="flex p-1 border border-slate-400 mb-2">
+                                    <img class="w-full" src="./images/gallery/image_01_s.jpg" alt="">
+                                </a>
+                                <p class="text-[#666] text-sm">
+                                    Duis convallis odio et velit venenatis ac venenatis turpis mattis varius quam et
+                                    laoreet. <a class="text-orange-500" href="">More...</a></p>
+                            </div>
+                            <div>
+                                <a href="" class="flex p-1 border border-slate-400 mb-2">
+                                    <img class="w-full" src="./images/gallery/image_02_s.jpg" alt="">
+                                </a>
+                                <p class="text-[#666] text-sm">
+                                    Duis convallis odio et velit venenatis ac venenatis turpis mattis varius quam et
+                                    laoreet. <a class="text-orange-500" href="">More...</a></p>
+                            </div>
+                            <div>
+                                <a href="" class="flex p-1 border border-slate-400 mb-2">
+                                    <img class="w-full" src="./images/gallery/image_03_s.jpg" alt="">
+                                </a>
+                                <p class="text-[#666] text-sm">
+                                    Duis convallis odio et velit venenatis ac venenatis turpis mattis varius quam et
+                                    laoreet. <a class="text-orange-500" href="">More...</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="py-4 bg-black">
+        <div class="w-[75%] sm-md:w-[85%] mx-auto">
+            <div class="w-full flex sm-md:flex-col sm:text-sm justify-center items-center gap-2">
+                <p class="text-[#666]">Copyright © 2022 <a href="" class="text-[#5fa008]">@Learn with Project</a></p>
+                <p class="text-[#666]">Design: <a href="" class="text-[#5fa008]">Sheikh Farid</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('btn');
+        const nav = document.getElementById('nav-body')
+
+        if (btn && nav) {
+            btn.addEventListener('click', () => {
+                nav.classList.toggle('h-[0px]')
+            })
+        }
+
+    </script>
+</body>
+
+</html>
